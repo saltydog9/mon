@@ -1,0 +1,14 @@
+<%- include("partials/header"); -%>
+
+<p>display</p>
+
+<% things.forEach(function(stuff){ %>
+<form action="/delete" method="post">
+<h1><%= stuff.question %></h1>
+<h1><%= stuff.answer %></h1>
+<input type="checkbox" name="checkbox" value="<%= stuff._id%>" onChange="this.form.submit()">
+</form>
+<% }) %> 
+<%- include("partials/footer"); -%>
+
+
