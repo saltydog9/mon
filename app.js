@@ -12,7 +12,7 @@ store=[];
 posts=[];
 a=0;
 // ---------------------------------------------------
-mongoose.connect("mongodb://0.0.0.0:27017/mon1");
+mongoose.connect("mongodb+srv://raydognine:carry747@cluster0.k4k1uqg.mongodb.net/todolist2")
 const testSchema = ({
     question: String,
     answer: String
